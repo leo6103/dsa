@@ -1,0 +1,1 @@
+Given the sequence a0, a1, ... a n-1 and positive integer K, We need to perform K queries, each query of the form RMQ(i,j) return the index of the smallest element of the sequence ai,...aj
