@@ -112,6 +112,15 @@ int main () {
   }
 
   auto tx = ranges[0][n-1].transactions;
+
+
+  cout << "There are " << tx.size() << " transactions: " <<endl;
+  
+  for (int i = 0; i < tx.size(); ++i) {
+    cout << "Buy at (" << tx[i].buy.idx << "," << tx[i].buy.val<< ")";
+    cout << " Sell at (" << tx[i].sell.idx << "," << tx[i].sell.val << ")"<< endl;
+  }
+
   int txNum = tx.size();
   if (txNum == 1) {
     cout << " 1" << endl;

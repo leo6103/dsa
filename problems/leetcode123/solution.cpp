@@ -110,3 +110,17 @@ public:
 bool Solution::calculated[105][105];
 Solution::Range Solution::ranges[105][105];
 Solution::DP Solution::dp[105][105];
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int n;
+    if (!(cin >> n)) return 0;
+    vector<int> prices(n);
+    for (int i = 0; i < n; ++i) cin >> prices[i];
+
+    Solution sol;
+    cout << sol.maxProfit(prices) << "\n";
+    return 0;
+}
